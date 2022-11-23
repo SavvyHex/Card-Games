@@ -9,5 +9,8 @@ class Deck:
             for v in values:
                 self.deck.append(Card(v, s))
 
+    def take(self, card) -> Card:
+        return card
+
     def remove(self, card) -> None:
         self.deck.remove(card)

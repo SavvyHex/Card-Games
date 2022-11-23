@@ -6,4 +6,4 @@ from deck import Deck
 
 class Blackjack:
     def __init__(self) -> None:
-        pass
+        self.deck = Deck()
