@@ -8,3 +8,6 @@ class Deck:
         for s in suites:
             for v in values:
                 self.deck.append(Card(v, s))
+
+    def remove(self, card) -> None:
+        self.deck.remove(card)
