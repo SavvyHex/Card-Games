@@ -12,6 +12,8 @@ class Blackjack:
         self.player, self.comp = Hand(), Hand()
 
     def drawCard(self, forPlayer:bool=True) -> None:
+        if self.deck.is_empty():
+            self.deck = Deck()
         card = choice(self.deck.deck)
         if forPlayer:
             self.player.draw(card)

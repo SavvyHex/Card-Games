@@ -14,3 +14,6 @@ class Deck:
 
     def remove(self, card) -> None:
         self.deck.remove(card)
+
+    def is_empty(self) -> bool:
+        return len(self.deck) == 0
